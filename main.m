@@ -17,7 +17,8 @@ end
 %LD_LIBRARY_PATH = getenv('LD_LIBRARY_PATH');
 %setenv('LD_LIBRARY_PATH', [LD_LIBRARY_PATH ':/N/u/davhunt/Carbonate/app-analyzePRF-GIFTI/workbench/libs_rh_linux64']);
 disp('asdff')
-analysis_HCP()
+wbcmd = '/usr/bin/wb_command';
+analysis_HCP(wbcmd)
 
 % compute pRF
 %wbcommand = '/usr/bin/wb_command'
